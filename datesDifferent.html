@@ -33,7 +33,7 @@
                 let startDate = document.getElementById("startDate").value; //получаем дату начала
                 let radios_check = form.querySelector('.radios [type=radio]:checked'); //какая радиокнопка с картинкой выбрана
                 let check_id = radios_check.id;// id выбранной радиокнопки
-                let check_label = form.querySelector('label[for=' + check_id + ']') //label выбранной радиокнопки
+                let check_label = form.querySelector('label[for=' + CSS.escape(check_id) + ']') //label выбранной радиокнопки
                 let check_image = check_label.querySelector('.radios_img'); //выбранная картинка
                 d0 = new Date(startDate);
                 d1 = new Date();
