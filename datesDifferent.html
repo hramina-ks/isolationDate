@@ -8,7 +8,7 @@
         <form class="formclass">
             <p>Выбор изображения</p>
             <div class="radios">
-                <label for="image1"><img srs="" alt=""></label>
+                <label for="image1"><img src="img/smile.jpg" alt="smile"></label>
                 <input class= "radios__item" type="radio" name="image" id="image1" value="image1" checked>
             </div>
             <label>
@@ -17,17 +17,26 @@
             </label>
             <a href="#" name="btnDate" id="btnDate">Рассчитать</a>
         </form>
+        <div class="result">
+            <img src="" alt="">
+            <p class="result_text"></p>
+        </div>
         <script language="JavaScript" type="text/javascript">
             let form = document.querySelector(".formclass");
             let radios = form.querySelectorAll(".radios__item");
             let btnDate = document.getElementById("btnDate");
+            let result = document.querySelector(".result");
+            let result_img = result.querySelector("img");
+            let result_text = result.querySelector(".result_text");
             btnDate.addEventListener("click", function(event)
             {
                 let startDate = document.getElementById("startDate").value;
+                radios_check = 
                 d0 = new Date(startDate);
                 d1 = new Date();
                 dt = (d1.getTime() - d0.getTime()) / (1000*60*60*24);
-                document.write('<strong>' + Math.round(dt) + '</strong> день карантина...');
+                result_img.src = 
+                result_text.innerHTML = '<strong>' + Math.round(dt) + '</strong> день карантина...';
 
                 event.preventDefault();  
             }, false);
