@@ -1,0 +1,31 @@
+    <template id="result">
+        <style> p { font-weight: bold; } </style>
+        <div class="result_view">
+            <img src="" alt="">
+            <p id="result_text" class="result_text"></p>
+        </div>
+        <div class="result_code">
+        </div>
+  </template>
+  
+  <div id="elem">Нажми на меня</div>
+  
+  <script>
+    elem.onclick = function() {
+      isResult = document.getElementById("result_id");
+      if (isResult != null)
+      {
+          isResult.remove();
+      }
+      
+      let result_div = document.createElement("div");
+      result_div.className = "result";
+      result_div.id = "result_id";
+      result_div.attachShadow({mode: 'open'});
+  
+      result_div.shadowRoot.append(result.content.cloneNode(true)); // (*)
+      result_div.shadowRoot.querySelector('.result_text').innerHTML = "Привет из теней!";
+      
+      document.body.append(result_div);
+    };
+  </script>
