@@ -36,9 +36,9 @@ btnDate.addEventListener("click", function(event)
         else
         {
             let result_div = document.createElement("div");
-        result_div.id = "result_id";
-        result_div.innerHTML = '<p>Эта дата еще не наступила!</p>';
-        document.body.append(result_div);
+            result_div.id = "result_id";
+            result_div.innerHTML = '<p>Эта дата еще не наступила!</p>';
+            document.body.append(result_div);
         }
     }
     else 
