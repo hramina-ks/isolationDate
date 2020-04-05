@@ -5,6 +5,15 @@
         <title>Счетчик дней</title>
     </head>
     <body>
+        <template id="result">
+            <style> p { font-weight: bold; } </style>
+            <div class="result_view">
+                <img class="result_img" src="" alt="">
+                <p id="result_text" class="result_text"></p>
+            </div>
+            <div class="result_code">
+            </div>
+        </template>
         <form class="formclass">
             <p>Выбор изображения</p>
             <div class="radios">
@@ -19,44 +28,6 @@
             </label>
             <a href="#" name="btnDate" id="btnDate">Рассчитать</a>
         </form>
-        <div class="result">
-            <div class="result_view">
-                <img src="" alt="">
-                <p class="result_text"></p>
-            </div>
-            <div class="result_code">
-            </div>
-        </div>
-        <script language="JavaScript" type="text/javascript">
-            let form = document.querySelector(".formclass");
-            let radios = form.querySelectorAll(".radios__item");
-            let btnDate = document.getElementById("btnDate");
-            let result = document.querySelector(".result_view");
-            let result_img = result.querySelector("img");
-            let result_text = result.querySelector(".result_text");
-            btnDate.addEventListener("click", function(event)
-            {
-                let startDate = document.getElementById("startDate").value; //получаем дату начала
-                if (startDate != '')
-                {
-                    let radios_check = form.querySelector('.radios [type=radio]:checked'); //какая радиокнопка с картинкой выбрана
-                    let check_id = radios_check.id;// id выбранной радиокнопки
-                    let check_label = form.querySelector('label[for=' + CSS.escape(check_id) + ']') //label выбранной радиокнопки
-                    let check_image = check_label.querySelector('.radios_img'); //выбранная картинка
-                    d0 = new Date(startDate);
-                    d1 = new Date();
-                    dt = (d1.getTime() - d0.getTime()) / (1000*60*60*24);
-                    result_img.src = check_image.src;
-                    result_img.alt = check_image.alt;
-                    result_text.innerHTML = '<strong>' + Math.round(dt) + '</strong> день карантина...';
-                }
-                else 
-                {
-                    result_text.innerHTML = 'Дата не выбрана';
-                }
-
-                event.preventDefault();  
-            }, false);
-            </script>
+        <script src="counter.js"></script>
     </body>
 </html>
