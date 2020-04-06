@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            <input type="date" id="startDate">
+            <button id=btnDate>Рассчитать</button>
+            <p id="result"></p>
+        </form>
+        <script>
+            let result = document.getElementById("result");
+            let btnDate =  document.getElementById("btnDate");
+            btnDate.addEventListener("click", function(event)
+            {
+                let startDate = document.getElementById("startDate").value;
+                let d0 = new Date(startDate);
+                let d1 = new Date();
+                d1.setHours(0,0,0,0);
+            
+                let d0_year = d0.getFullYear();
+                let d0_month = d0.getMonth();
+                let d0_date = d0.getDate();
+            
+                let d1_year = d1.getFullYear();
+                let d1_month = d1.getMonth();
+                let d1_date = d1.getDate();
+
+                let years;
+                let monthes;
+                let dates;
+
+                console.log(d1_date + " " + d0_date)
+
+                if (d1_year == d0_year)
+                {
+                    if (d1_month == d0_month)
+                    {
+                        dates = d1_date - d0_date;
+                        result.innerHTML = "Прошло " + dates + " дней";
+                    }
+                    else
+                    {
+                        monthes = d1_month - d0_month;
+                        dates = d1_date - d0_date;
+                        if (dates == 0 || dates > 0)
+                        {
+                            result.innerHTML = "Прошло " + monthes + " месяц(ев) " + dates + " дней";
+                        }
+                    }
+                }
+            event.preventDefault();  
+            }, false); 
+        </script>
+    </body>
+</html>
