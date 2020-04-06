@@ -11,7 +11,9 @@ btnDate.addEventListener("click", function(event)
     }
     if (startDate != '')
     {
+        console.log(startDate);
         let d0 = new Date(startDate);
+        console.log(d0.getFullYear());
         let d1 = new Date();
         if (d0 <= d1)
         {
