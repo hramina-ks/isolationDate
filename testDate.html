@@ -34,6 +34,10 @@
                 let years = 0;
                 let monthes = 0;
                 let dates = 0;
+
+                let yearText;
+                let monthText;
+                let dateText;
                 let stringDate = "Прошло уже ";
 
                 years = d1_year - d0_year; 
@@ -53,18 +57,38 @@
                 }
 
 
+                switch (years % 10)
+                {
+                    case 1 : yearText = " год "; break;
+                    case 2 : case 3 : case 4 : yearText = " года "; break;
+                    default : yearText = " лет "; break;
+                }
+                
+                switch (monthes % 10)
+                {
+                    case 1 : monthText = " месяц "; break;
+                    case 2 : case 3 : case 4 : monthText = " месяца "; break;
+                    default : monthText = " месяцев "; break;
+                }
+                
+                switch (dates % 10)
+                {
+                    case 1 : dateText = " день"; break;
+                    case 2 : case 3 : case 4 : dateText = " дня"; break;
+                    default : dateText = " дней"; break;
+                }
+
                 if (years != 0)
                 {
-                    stringDate = stringDate + years + " лет "
+                    stringDate = stringDate + years + yearText;
                 }
                 if (monthes != 0)
                 {
-                    stringDate = stringDate + monthes + " месяц(ев) "
-                }
+                    stringDate = stringDate + monthes + monthText;                }
 
                 if (years != 0 || monthes != 0)
                 {
-                    stringDate = stringDate + "и " + dates + " дней"
+                    stringDate = stringDate + "и " + dates + dateText;
                 }
                 else
                 {
