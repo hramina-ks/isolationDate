@@ -34,30 +34,24 @@
                 let years = 0;
                 let monthes = 0;
                 let dates = 0;
-                let stringDate = "Сижу на карантине ";
+                let stringDate = "Прошло уже ";
 
-                if (d1_year == d0_year)
+                years = d1_year - d0_year; 
+                monthes = d1_month - d0_month;
+                dates = d1_date - d0_date;
+                
+                if (monthes < 0)
                 {
-                    if (d1_month == d0_month)
-                    {
-                        dates = d1_date - d0_date;
-                        //result.innerHTML = "Сижу на карантине " + dates + " дней";
-                    }
-                    else
-                    {
-                        monthes = d1_month - d0_month;
-                        dates = d1_date - d0_date;
-                        if (dates == 0 || dates > 0)
-                        {
-                            monthes--;
-                            dates = d1_date + (d0.daysInMonth() - d0_date);
-                        }
-                    }
+                    years--;
+                    monthes = d1_month + (12 - d0_month);
                 }
-                else
-                {
 
+                if (dates < 0)
+                {
+                    monthes--;
+                    dates = d1_date + (d0.daysInMonth() - d0_date);
                 }
+
 
                 if (years != 0)
                 {
