@@ -43,19 +43,37 @@
                 years = d1_year - d0_year; 
                 monthes = d1_month - d0_month;
                 dates = d1_date - d0_date;
+                console.log(dates + " " + monthes + " " + years)
+
+                if (dates < 0 && monthes < 0)
+                {
+                    monthes--;
+                    dates = d1_date + (d0.daysInMonth() - d0_date) + 1;
+                    years--;
+                    monthes = d1_month + (12 - d0_month) - 1;
+                }
+                //console.log(dates + " " + monthes + " " + years)
+                
+                if (dates < 0)
+                {
+                    monthes--;
+                    dates = d1_date + (d0.daysInMonth() - d0_date) + 1;
+                    if (monthes < 0)
+                    {
+                        years--;
+                        monthes = d1_month + (12 - d0_month) - 1;
+                    
+                    }
+                }
+                //console.log(dates + " " + monthes + " " + years)
                 
                 if (monthes < 0)
                 {
                     years--;
                     monthes = d1_month + (12 - d0_month);
+                
                 }
-
-                if (dates < 0)
-                {
-                    monthes--;
-                    dates = d1_date + (d0.daysInMonth() - d0_date);
-                }
-
+                //console.log(dates + " " + monthes + " " + years)
 
                 switch (years % 10)
                 {
@@ -78,13 +96,27 @@
                     default : dateText = " дней"; break;
                 }
 
+                switch (years)
+                {
+                    case 11 : case 12 : case 13 : case 14 : case 15 : case 16 : case 17 : case 18 : case 19 : yearText = " лет "; break;
+                }
+                switch (monthes)
+                {
+                    case 11 : case 12 : case 13 : case 14 : case 15 : case 16 : case 17 : case 18 : case 19 : monthText = " месяцев "; break;
+                }
+                switch (dates)
+                {
+                    case 11 : case 12 : case 13 : case 14 : case 15 : case 16 : case 17 : case 18 : case 19 : dateText = " дней "; break;
+                }
+
                 if (years != 0)
                 {
                     stringDate = stringDate + years + yearText;
                 }
                 if (monthes != 0)
                 {
-                    stringDate = stringDate + monthes + monthText;                }
+                    stringDate = stringDate + monthes + monthText;
+                }
 
                 if (years != 0 || monthes != 0)
                 {
@@ -92,7 +124,7 @@
                 }
                 else
                 {
-                    stringDate = stringDate + dates + " дней"
+                    stringDate = stringDate + dates + dateText
                 }
                 result.innerHTML = stringDate;
 
