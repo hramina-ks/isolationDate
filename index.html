@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Stay home!</title>
+    </head>
+    <body>
+        <template id="result">
+            <div class="result_view">
+                <img class="result_img" src="" alt="">
+                <p id="result_text" class="result_text"></p>
+            </div>
+            <button class="btn" name="btnResult" id="btnResult">Получить код</button>
+        </template>
+        <div class="content">
+            <header class="header">
+                <h1 >Stay home!</h1>
+                <p>Сидите дома на карантине?<br>Вставьте в свой блог счетчик времени!</p>
+            </header>
+            <div class="imageDate">
+                <form class="formclass">
+                    <p>Выберите картинку:</p>
+                    <div class="radios">
+                        <div class="image-card">
+                            <label for="image1"><img class="radios_img" src="img/picture1.jpg" alt="работать удаленно" title="работать удаленно"></label>
+                            <input class= "radios__item" type="radio" name="image" id="image1" value="image1" checked>
+                        </div>
+                        <div class="image-card">
+                            <label for="image2"><img class="radios_img" src="img/picture2.jpg" alt="кошка гуляет" title="кошка гуляет"></label>
+                            <input class= "radios__item" type="radio" name="image" id="image2" value="image2">
+                        </div>
+                        <div class="image-card">
+                            <label for="image3"><img class="radios_img" src="img/picture3.jpg" alt="ночная смена" title="ночная смена"></label>
+                            <input class= "radios__item" type="radio" name="image" id="image3" value="image3">
+                        </div>
+                        <div class="image-card">
+                            <label for="image4"><img class="radios_img" src="img/picture4.jpg" alt="к карантину готов" title="к карантину готов"></label>
+                            <input class= "radios__item" type="radio" name="image" id="image4" value="image4">
+                        </div>
+                        <div class="image-card">
+                            <label for="image5"><img class="radios_img" src="img/picture5.jpg" alt="матрешки" title="матрешки"></label>
+                            <input class= "radios__item" type="radio" name="image" id="image5" value="image5">
+                        </div>
+                        <div class="image-card">
+                            <label for="image6"><img class="radios_img" src="img/picture6.jpg" alt="stay home!" title="stay home!"></label>
+                            <input class= "radios__item" type="radio" name="image" id="image6" value="image6">
+                        </div>
+                        <div class="image-card">
+                            <label for="image7"><img class="radios_img" src="img/picture7.jpg" alt="с комфортом" title="с комфортом"></label>
+                            <input class= "radios__item" type="radio" name="image" id="image7" value="image7">
+                        </div>
+                        <div class="image-card">
+                            <label for="image8"><img class="radios_img" src="img/picture8.jpg" alt="через щелочку" title="через щелочку"></label>
+                            <input class= "radios__item" type="radio" name="image" id="image8" value="image8">
+                        </div>
+                        <div class="image-card">
+                            <label for="image9"><img class="radios_img" src="img/picture9.jpg" alt="мишка" title="мишка"></label>
+                            <input class= "radios__item" type="radio" name="image" id="image9" value="image9">
+                        </div>
+                        <div class="image-card">
+                            <label for="image10"><img class="radios_img" src="img/picture10.jpg" alt="самолетик" title="самолетик"></label>
+                            <input class= "radios__item" type="radio" name="image" id="image10" value="image10">
+                        </div>
+
+                        <label>
+                            <p>Введите дату начала карантина:</p>
+                            <input name="startDate" id="startDate" type="date">
+                        </label>
+                        <button class="btn" name="btnDate" id="btnDate">Рассчитать</button>
+                    </div>
+                </form>
+            </div>
+            <footer class="footer">
+                <p class="copyright"></p>
+            </footer>
+        </div>
+        <script src="counter.js"></script>
+    </body>
+</html>
+
