@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Stay home!</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <template id="result">
@@ -14,12 +15,15 @@
         </template>
         <div class="content">
             <header class="header">
-                <h1 class="header__head">Stay home!</h1>
-                <p class="header__text">Сидите дома на карантине?<br>Вставьте в свой блог счетчик времени!</p>
+                <img class="header__image" src="img/globus.jpg" alt="глобус" title="глобус">
+                <div class="header__content">
+                    <h1 class="header__head">Stay home!</h1>
+                    <p class="header__text">Сидите дома на карантине?<br>Вставьте в свой блог счетчик времени!</p>
+                </div>
             </header>
-            <div class="imageDate">
+            <div class="imageDate gray">
                 <form class="formclass">
-                    <p>Выберите картинку:</p>
+                    <p class="imageDate__text">Выберите картинку:</p>
                     <div class="radios">
                         <div class="image-card">
                             <label for="image1"><img class="radios_img" src="img/picture1.jpg" alt="работать удаленно" title="работать удаленно"></label>
@@ -61,8 +65,9 @@
                             <label for="image10"><img class="radios_img" src="img/picture10.jpg" alt="самолетик" title="самолетик"></label>
                             <input class= "radios__item" type="radio" name="image" id="image10" value="image10">
                         </div>
-
-                        <label>
+                    </div>
+                    <div class="date">
+                        <label class="date-label">
                             <p class="imageDate__text">Введите дату начала карантина:</p>
                             <input class="startDate" name="startDate" id="startDate" type="date">
                         </label>

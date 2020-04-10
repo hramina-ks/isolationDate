@@ -1,0 +1,65 @@
+body {
+    background-image: url('img/virus.png')
+}
+
+.content {
+    background-color: white;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 20px 40px;
+}
+
+.gray {
+    background-color: #F0F0F0;
+}
+
+.header {
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__content {
+    width: 760px;
+    text-align: center;
+}
+
+.imageDate {
+    padding: 40px 60px;
+}
+
+.imageDate__text {
+    text-align: center;
+}
+
+.radios {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-card img {
+    width: 170px;
+    height: 117px;
+}
+
+.date {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.date-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.startDate {
+    width: 173px;
+    height: 35px;
+    text-align: center;
+    font-size: 18px;
+}
