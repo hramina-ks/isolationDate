@@ -43,7 +43,6 @@ body {
 
 .header__content {
     width: 735px;
-    text-align: center;
     font-family: "Open Sans";
     font-style: normal;
     font-weight: normal;
@@ -58,6 +57,7 @@ body {
 }
 
 .header__head {
+    text-align: center;
     font-family: "Gotham Pro";
     font-style: normal;
     font-weight: 300;
@@ -69,6 +69,7 @@ body {
 
 .header__text {
     margin-bottom:113px;
+    text-align: center;
 }
 
 .imageDate {
@@ -189,4 +190,64 @@ body {
     line-height: 19px;
     display: block;
     padding: 20px 0;
+}
+
+.code {
+    padding: 34px 60px;
+}
+
+.code_img {
+    display: block;
+    margin: 30px auto;
+}
+
+.code_text {
+    text-align: center;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.code_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 37px;
+}
+
+.code_lable {
+    display: block;
+    width: 25%;
+    min-width: 100px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #707070;
+}
+
+.code_value {
+    width: 65%;
+    min-width: 200px;
+    background: #FFFFFF;
+    border: 1px solid #707070;
+    box-sizing: border-box;
+    padding: 5px;
+    height: 60px;
+}
+
+.copycode {
+    width: 37px;
+    height: 40px;
+    background: url('img/sheet1.png') no-repeat;
+    cursor: pointer;
+}
+
+.center_button{
+    display: block;
+    margin: 0 auto;
 }
