@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('fonts/Gotham_Pro.ttf')
+}
+
+@font-face {
+    font-family: 'Gotham Pro regular';
+    src: url('fonts/gotham\ pro\ regular.ttf')
+}
+
 body {
     background-image: url('img/virus.png')
 }
@@ -10,6 +20,15 @@ body {
 
 .btn {
     padding: 20px 40px;
+    border-radius: 30px;font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: white;
+    background-color: #0F4F4F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
 }
 
 .gray {
@@ -41,7 +60,7 @@ body {
 .header__head {
     font-family: "Gotham Pro";
     font-style: normal;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 50px;
     line-height: 72px;
     color: #0F4F4F;
@@ -53,11 +72,16 @@ body {
 }
 
 .imageDate {
-    padding: 40px 60px;
+    padding: 40px 38px;
 }
 
 .imageDate__text {
     text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .header__text::after {
@@ -73,6 +97,16 @@ body {
 .radios {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.image-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+    margin: 21px;
 }
 
 .image-card img {
@@ -82,21 +116,32 @@ body {
 
 .date {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    padding-top: 29px;
 }
 
 .date-label {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .startDate {
     width: 173px;
     height: 35px;
     text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
     font-size: 18px;
+    line-height: 20px;
+    margin-left: 24px;
+    border-radius: 5px;
 }
 
 .footer {
@@ -111,4 +156,36 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
+}
+
+.result {
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result_view {
+    width: 500px;
+    height: 407px;
+    background: url('img/smile3.png') 5% 96% no-repeat,
+                url('img/smile3.png') 95% 96% no-repeat;
+    background-color: #EDECEC;
+    margin-bottom: 50px;
+}
+
+.result_img {
+    width: 500px;
+    height: 344px;
+}
+
+.result_text {
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: block;
+    padding: 20px 0;
 }

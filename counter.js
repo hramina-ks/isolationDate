@@ -131,13 +131,12 @@ btnDate.addEventListener("click", function(event) //если на кнопку �
 
 
             let result_div = document.createElement("div"); //Создаем новый див для блока результатов
+            let result = document.getElementById('result');
+            result_div.append(result.content.cloneNode(true));
             result_div.className = "result";
             result_div.id = "result_id";
-            result_div.attachShadow({mode: 'open'}); //открываем теневое дерево
-    
-            result_div.shadowRoot.append(result.content.cloneNode(true)); // добавляем в новый див шаблон
-            let result_img = result_div.shadowRoot.querySelector(".result_img");
-            result_div.shadowRoot.querySelector('.result_text').innerHTML = stringDate;
+            let result_img = result_div.querySelector(".result_img");
+            result_div.querySelector('.result_text').innerHTML = stringDate;
             result_img.src = check_image.src;
             result_img.title = check_image.title;
             result_img.alt = check_image.alt; //заполняем теги и атрибуты в новом диве
@@ -145,18 +144,12 @@ btnDate.addEventListener("click", function(event) //если на кнопку �
         }
         else
         {
-            let result_div = document.createElement("div"); //если стартовая дата еще не наступила, выводим сообщение об ошибке
-            result_div.id = "result_id";
-            result_div.innerHTML = '<p>Эта дата еще не наступила!</p>';
-            imageDate.after(result_div); //публикуем див на странице
+            alert('Эта дата еще не наступила!');
         }
     }
     else 
     {
-        let result_div = document.createElement("div"); //если стартовая дата не выбрана, выводим сообщение об ошибке
-        result_div.id = "result_id";
-        result_div.innerHTML = '<p>Дата не выбрана</p>';
-        imageDate.after(result_div); //публикуем див на странице
+        alert('Дата не выбрана!');
     }
 
         event.preventDefault();  
