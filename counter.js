@@ -1,6 +1,7 @@
 Date.prototype.daysInMonth = function() {
     return 32 - new Date(this.getFullYear(), this.getMonth(), 33).getDate(); //метод для получения количества дней в месяце (задать заведомо нереальное число (33), браузер сам сбросит его до максимально возможного)
 };
+let imageDate = document.querySelector(".imageDate");
 let content = document.querySelector(".content");
 let form = document.querySelector(".formclass"); //ищем на странице форму
 let radios = form.querySelectorAll(".radios__item"); //получаем все радиокнопки
@@ -139,14 +140,14 @@ btnDate.addEventListener("click", function(event) //если на кнопку �
             result_div.shadowRoot.querySelector('.result_text').innerHTML = stringDate;
             result_img.src = check_image.src;
             result_img.alt = check_image.alt; //заполняем теги и атрибуты в новом диве
-            content.append(result_div); //публикуем див на странице
+            imageDate.after(result_div); //публикуем див на странице
         }
         else
         {
             let result_div = document.createElement("div"); //если стартовая дата еще не наступила, выводим сообщение об ошибке
             result_div.id = "result_id";
             result_div.innerHTML = '<p>Эта дата еще не наступила!</p>';
-            content.append(result_div);
+            imageDate.after(result_div); //публикуем див на странице
         }
     }
     else 
@@ -154,7 +155,7 @@ btnDate.addEventListener("click", function(event) //если на кнопку �
         let result_div = document.createElement("div"); //если стартовая дата не выбрана, выводим сообщение об ошибке
         result_div.id = "result_id";
         result_div.innerHTML = '<p>Дата не выбрана</p>';
-        content.append(result_div);
+        imageDate.after(result_div); //публикуем див на странице
     }
 
         event.preventDefault();  
