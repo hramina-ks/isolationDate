@@ -161,6 +161,11 @@ body {
     line-height: 16px;
 }
 
+.footer__contact {
+    color: white;
+    text-decoration: none;
+}
+
 .result {
     padding: 30px 60px;
     display: flex;
