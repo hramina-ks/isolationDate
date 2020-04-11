@@ -23,8 +23,33 @@ body {
 }
 
 .header__content {
-    width: 760px;
+    width: 735px;
     text-align: center;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url('img/smiles.jpg') repeat-x;
+    background-position-y: 105px;
+    position: relative;
+}
+
+.header__head {
+    font-family: "Gotham Pro";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 50px;
+    line-height: 72px;
+    color: #0F4F4F;
+    text-transform: uppercase;
+}
+
+.header__text {
+    margin-bottom:113px;
 }
 
 .imageDate {
@@ -33,6 +58,16 @@ body {
 
 .imageDate__text {
     text-align: center;
+}
+
+.header__text::after {
+    content: "";
+    position: absolute;
+    width: 585px;
+    height: 0px;
+    border-bottom: 1px solid #0F4F4F;
+    left: 75px;
+    bottom: 55px;
 }
 
 .radios {
@@ -71,4 +106,9 @@ body {
     background-color: #050439;
     color: white;
     padding: 24px 60px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
 }

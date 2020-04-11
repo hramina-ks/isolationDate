@@ -139,6 +139,7 @@ btnDate.addEventListener("click", function(event) //если на кнопку �
             let result_img = result_div.shadowRoot.querySelector(".result_img");
             result_div.shadowRoot.querySelector('.result_text').innerHTML = stringDate;
             result_img.src = check_image.src;
+            result_img.title = check_image.title;
             result_img.alt = check_image.alt; //заполняем теги и атрибуты в новом диве
             imageDate.after(result_div); //публикуем див на странице
         }
