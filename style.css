@@ -134,7 +134,7 @@ body {
 
 .date {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     padding-top: 29px;
     flex-wrap: wrap;
@@ -229,7 +229,7 @@ body {
 
 .code_img {
     display: block;
-    margin: 30px auto;
+    margin: 5vw auto;
 }
 
 .code_text {
