@@ -1,4 +1,4 @@
-let blocks = document.querySelectorAll('.code_block');
+let fields = document.querySelectorAll('.code_value');
 let buttons = document.querySelectorAll('.copycode');
 
 for(var i=0; i<buttons.length; i++){
@@ -6,7 +6,7 @@ for(var i=0; i<buttons.length; i++){
       button_id = e.target.getAttribute('id');
 
       let copytext = document.createElement('input');
-        copytext.value = blocks[button_id].querySelector('.code_value').value;
+        copytext.value = fields[button_id].value;
         document.body.appendChild(copytext);
         copytext.select();
         document.execCommand('copy');

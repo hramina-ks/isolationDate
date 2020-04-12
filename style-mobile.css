@@ -1,0 +1,29 @@
+.content {
+    width: 95vw;
+    min-width: 600px;
+}
+
+.header, .code, .footer, .result {
+    padding: 34px 5%;
+}
+
+.header__content {
+    background-position-y: 550px;
+    width: 100%;
+}
+
+.header__image {
+    display: none;
+}
+
+.header__image_mobile {
+    display: block;
+}
+
+.header__text::after {
+    display: none;
+}
+
+.radios {
+    justify-content: space-around;
+}

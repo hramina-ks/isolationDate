@@ -100,15 +100,15 @@ btnDate.addEventListener("click", function(event) //если на кнопку �
                 //особые случаи определим отдельно
                 switch (years)
                 {
-                    case 11 : case 12 : case 13 : case 14 : case 15 : case 16 : case 17 : case 18 : case 19 : yearText = " лет "; break;
+                    case 11 : case 12 : case 13 : case 14 : yearText = " лет "; break;
                 }
                 switch (monthes)
                 {
-                    case 11 : case 12 : case 13 : case 14 : case 15 : case 16 : case 17 : case 18 : case 19 : monthText = " месяцев "; break;
+                    case 11 : monthText = " месяцев "; break;
                 }
                 switch (dates)
                 {
-                    case 11 : case 12 : case 13 : case 14 : case 15 : case 16 : case 17 : case 18 : case 19 : dateText = " дней "; break;
+                    case 11 : case 12 : case 13 : case 14 : dateText = " дней "; break;
                 }
 
                 if (years != 0) //если прошло больше 0 лет
