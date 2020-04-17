@@ -226,11 +226,24 @@ body {
 
 .code {
     padding: 34px 60px;
+    position: relative;
 }
 
 .code_img {
-    display: block;
-    margin: 5vw auto;
+    width: 500px;
+    margin: 13px auto;
+    margin-bottom: 55px;
+    box-sizing: content-box;
+}
+
+.code_img::after {
+    content: "";
+    width: 585px;
+    height: 0px;
+    border: 1px solid #0F4F4F;
+    position: absolute;
+    top: 555px;
+    left: 278px;
 }
 
 .code_text {

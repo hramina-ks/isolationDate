@@ -1,6 +1,6 @@
 .content {
     width: 95vw;
-    min-width: 550px;
+    min-width: 560px;
 }
 
 .header, .code, .footer, .result {
@@ -30,4 +30,9 @@
 
 .start-date {
     margin-left: 15px;
+}
+
+.code_img::after {
+    width: 50vw;
+    left: 25%;
 }
