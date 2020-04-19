@@ -3,10 +3,10 @@
     <head>
         <meta charset="utf-8">
         <title>Stay home!</title>
-        <link rel="stylesheet" type="text/css" href="reset.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" media="only screen and (max-width: 1200px)" href="style-mobile.css">
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" media="only screen and (max-width: 1200px)" href="css/style-mobile.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     </head>
     <body>
         <template id="result">
@@ -18,10 +18,10 @@
         </template>
         <div class="content">
             <header class="header">
-                <img class="header__image" src="img/globus.jpg" alt="глобус" title="глобус">
+                <img class="header__image" src="images/globus.jpg" alt="глобус" title="глобус">
                 <div class="header__content">
                     <h1 class="header__head">Stay home!</h1>
-                    <img class="header__image_mobile" src="img/globus.jpg" alt="глобус" title="глобус">
+                    <img class="header__image_mobile" src="images/globus.jpg" alt="глобус" title="глобус">
                     <p class="header__text">Сидите дома на карантине?<br>Вставьте в свой блог счетчик времени!</p>
                 </div>
             </header>
@@ -30,44 +30,44 @@
                     <p class="imageDate__text">Выберите картинку:</p>
                     <div class="radios">
                         <div class="image-card">
-                            <label for="image1"><img class="radios_img" src="img/picture1.jpg" alt="работать удаленно" title="работать удаленно"></label>
-                            <input class= "radios__item" type="radio" name="image" id="image1" value="image1" checked>
+                            <label for="image1"><img class="radios_img" src="images/picture1.jpg" alt="Женщина в постели с полотенцем на голове" title="Женщина в постели с полотенцем на голове"></label>
+                            <input class= "radios__item" type="radio" name="picture_id" id="image1" value="1" checked>
                         </div>
                         <div class="image-card">
-                            <label for="image2"><img class="radios_img" src="img/picture2.jpg" alt="кошка гуляет" title="кошка гуляет"></label>
-                            <input class= "radios__item" type="radio" name="image" id="image2" value="image2">
+                            <label for="image2"><img class="radios_img" src="images/picture2.jpg" alt="Кошка в окне" title="Кошка в окне"></label>
+                            <input class= "radios__item" type="radio" name="picture_id" id="image2" value="2">
                         </div>
                         <div class="image-card">
-                            <label for="image3"><img class="radios_img" src="img/picture3.jpg" alt="ночная смена" title="ночная смена"></label>
-                            <input class= "radios__item" type="radio" name="image" id="image3" value="image3">
+                            <label for="image3"><img class="radios_img" src="images/picture3.jpg" alt="Мужик в маске за ноутом" title="Мужик в маске за ноутом"></label>
+                            <input class= "radios__item" type="radio" name="picture_id" id="image3" value="3">
                         </div>
                         <div class="image-card">
-                            <label for="image4"><img class="radios_img" src="img/picture4.jpg" alt="к карантину готов" title="к карантину готов"></label>
-                            <input class= "radios__item" type="radio" name="image" id="image4" value="image4">
+                            <label for="image4"><img class="radios_img" src="images/picture4.jpg" alt="Мужик в противогазе с туалетной бумагой" title="Мужик в противогазе с туалетной бумагой"></label>
+                            <input class= "radios__item" type="radio" name="picture_id" id="image4" value="4">
                         </div>
                         <div class="image-card">
-                            <label for="image5"><img class="radios_img" src="img/picture5.jpg" alt="матрешки" title="матрешки"></label>
-                            <input class= "radios__item" type="radio" name="image" id="image5" value="image5">
+                            <label for="image5"><img class="radios_img" src="images/picture5.jpg" alt="Матрешки в масках" title="Матрешки в масках"></label>
+                            <input class= "radios__item" type="radio" name="picture_id" id="image5" value="5">
                         </div>
                         <div class="image-card">
-                            <label for="image6"><img class="radios_img" src="img/picture6.jpg" alt="stay home!" title="stay home!"></label>
-                            <input class= "radios__item" type="radio" name="image" id="image6" value="image6">
+                            <label for="image6"><img class="radios_img" src="images/picture6.jpg" alt="Дети у закрытой двери" title="Дети у закрытой двери"></label>
+                            <input class= "radios__item" type="radio" name="picture_id" id="image6" value="6">
                         </div>
                         <div class="image-card">
-                            <label for="image7"><img class="radios_img" src="img/picture7.jpg" alt="с комфортом" title="с комфортом"></label>
-                            <input class= "radios__item" type="radio" name="image" id="image7" value="image7">
+                            <label for="image7"><img class="radios_img" src="images/picture7.jpg" alt="Чьи-то ноги в кровати" title="Чьи-то ноги в кровати"></label>
+                            <input class= "radios__item" type="radio" name="picture_id" id="image7" value="7">
                         </div>
                         <div class="image-card">
-                            <label for="image8"><img class="radios_img" src="img/picture8.jpg" alt="через щелочку" title="через щелочку"></label>
-                            <input class= "radios__item" type="radio" name="image" id="image8" value="image8">
+                            <label for="image8"><img class="radios_img" src="images/picture8.jpg" alt="Девочка у окна" title="Девочка у окна"></label>
+                            <input class= "radios__item" type="radio" name="picture_id" id="image8" value="8">
                         </div>
                         <div class="image-card">
-                            <label for="image9"><img class="radios_img" src="img/picture9.jpg" alt="мишка" title="мишка"></label>
-                            <input class= "radios__item" type="radio" name="image" id="image9" value="image9">
+                            <label for="image9"><img class="radios_img" src="images/picture9.jpg" alt="Мишка в маске" title="Мишка в маске"></label>
+                            <input class= "radios__item" type="radio" name="picture_id" id="image9" value="9">
                         </div>
                         <div class="image-card">
-                            <label for="image10"><img class="radios_img" src="img/picture10.jpg" alt="самолетик" title="самолетик"></label>
-                            <input class= "radios__item" type="radio" name="image" id="image10" value="image10">
+                            <label for="image10"><img class="radios_img" src="images/picture10.jpg" alt="Бумажный самолетик с надписями" title="Бумажный самолетик с надписями"></label>
+                            <input class= "radios__item" type="radio" name="picture_id" id="image10" value="10">
                         </div>
                     </div>
                     <div class="date">
@@ -82,12 +82,12 @@
             <footer class="footer">
                 <p class="footer__copyright">&copy; Марьяна Орлова, Ксения Храмина 2020</p>
                 <div class="social">
-                    <a class="footer__contact" href="https://vk.com/id1149997" target="_onclick"><img src="img/vk.png" alt="Марьяна Орлова" title="Марьяна Орлова"></a>
-                    <a class="footer__contact" href="https://www.facebook.com/ksenia.hramina" target="_onclick"><img src="img/fb1.png" alt="Ксения Храмина" title="Ксения Храмина"></a>
+                    <a class="footer__contact" href="https://vk.com/id1149997" target="_onclick"><img src="images/vk.png" alt="Марьяна Орлова" title="Марьяна Орлова"></a>
+                    <a class="footer__contact" href="https://www.facebook.com/ksenia.hramina" target="_onclick"><img src="images/fb1.png" alt="Ксения Храмина" title="Ксения Храмина"></a>
                 </div>
             </footer>
         </div>
-        <script src="counter.js"></script>
+        <script src="js/counter.js"></script>
     </body>
 </html>
 

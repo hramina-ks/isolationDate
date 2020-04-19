@@ -1,15 +1,25 @@
 @font-face {
     font-family: 'Gotham Pro';
-    src: url('fonts/Gotham_Pro.ttf')
+    src: url('../fonts/Gotham_Pro.ttf')
 }
 
 @font-face {
     font-family: 'Gotham Pro regular';
-    src: url('fonts/gotham\ pro\ regular.ttf')
+    src: url('../fonts/gotham\ pro\ regular.ttf')
+}
+
+@font-face {
+    font-family: 'Open sans';
+    src: url('../fonts/OpenSans-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf')
 }
 
 body {
-    background-image: url('img/virus.png');
+    background-image: url('../images/virus.png');
 }
 
 .content {
@@ -68,7 +78,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background: url('img/smiles.jpg') repeat-x;
+    background: url('../images/smiles.jpg') repeat-x;
     background-position-y: 105px;
     position: relative;
 }
@@ -96,7 +106,7 @@ body {
 
 .imageDate__text {
     text-align: center;
-    font-family: Open Sans;
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -148,7 +158,8 @@ body {
 .date-label {
     display: flex;
     justify-content: space-between;
-    align-items: center;font-family: Open Sans;
+    align-items: center;
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -159,7 +170,7 @@ body {
     width: 173px;
     height: 35px;
     text-align: center;
-    font-family: Open Sans;
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -175,7 +186,7 @@ body {
     background-color: #050439;
     color: white;
     padding: 24px 60px;
-    font-family: Roboto;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -199,8 +210,8 @@ body {
 .result_view {
     width: 500px;
     height: 407px;
-    background: url('img/smile3.png') 5% 96% no-repeat,
-                url('img/smile3.png') 95% 96% no-repeat;
+    background: url('../images/smile3.png') 5% 96% no-repeat,
+                url('../images/smile3.png') 95% 96% no-repeat;
     background-color: #EDECEC;
     margin-bottom: 50px;
 }
@@ -222,7 +233,7 @@ body {
 }
 
 .social {
-    width: 80px;
+    width: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -292,7 +303,7 @@ body {
 .copycode {
     width: 37px;
     height: 40px;
-    background: url('img/sheet1.png') no-repeat;
+    background: url('../images/sheet1.png') no-repeat;
     cursor: pointer;
     margin-left: 10px;
 }
@@ -303,4 +314,28 @@ body {
     width: 100px;
     text-align: center;
     text-decoration: none;
+}
+
+.content404 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content404__block {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content404__text {
+    text-align: center;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
 }
