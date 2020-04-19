@@ -33,12 +33,6 @@ body {
     cursor: pointer;
 }
 
-#btnBack {
-    display: block;
-    width: 100px;
-    text-align: center;
-    text-decoration: none;
-}
 
 .gray {
     background-color: #F0F0F0;
@@ -306,4 +300,7 @@ body {
 .back_button{
     display: block;
     margin: 0 auto;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
 }
