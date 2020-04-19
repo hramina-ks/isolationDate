@@ -140,7 +140,7 @@ btnDate.addEventListener("click", function(event) //если на кнопку �
             result_img.src = check_image.src;
             result_img.title = check_image.title;
             result_img.alt = check_image.alt; //заполняем теги и атрибуты в новом диве
-            imageDate.after(result_div); //публикуем див на странице
+            form.append(result_div); //публикуем див на странице
         }
         else
         {
