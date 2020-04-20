@@ -191,6 +191,7 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
+    height: 35px;
 }
 
 .footer__contact {
@@ -316,15 +317,16 @@ body {
     text-decoration: none;
 }
 
-.content404 {
+/*.content404 {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+}*/
 
 .content404__block {
-    height: 100%;
+    height: calc(100vh - 83px);
+    min-height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
