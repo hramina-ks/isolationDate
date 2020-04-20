@@ -331,6 +331,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding: 0 30px;
 }
 
 .content404__text {
