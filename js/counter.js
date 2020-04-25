@@ -123,6 +123,7 @@ btnDate.addEventListener("click", function(event) //если на кнопку �
     
                     if (years != 0 || monthes != 0) //если годы или месяцы не равны 0
                     {
+                        if (dates != 0)
                         stringDate = stringDate + "и " + dates + dateText; //добавляем союз И, а после дни
                     }
                     else
